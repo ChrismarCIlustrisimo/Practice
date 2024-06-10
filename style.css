@@ -1,4 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 2px;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.box {
+  transition: 2s;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(47, 47, 143);
+  animation: tite 5s infinite;
+}
+@keyframes tite {
+  0% {
+    background-color: rgb(47, 47, 143);
+  }
+  25% {
+    background-color: rgb(132, 47, 143);
+    scale: 0.9;
+  }
+  50% {
+    background-color: rgb(47, 143, 60);
+    scale: 0.8;
+  }
+  78% {
+    background-color: rgb(143, 47, 47);
+    scale: 0.9;
+  }
+  100% {
+    background-color: rgb(143, 121, 47);
+  }
+}
+.box:hover {
+  &::after {
+    content: "FUCK YOU";
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    filter: brightness(200%);
+  }
+}
+
+button {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: rgb(255, 0, 64);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
