@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box" id="box"></div>
+      <button onclick="fire()">Fire</button>
+    </main>
+  </body>
+
+  <script>
+    const fire = () => {
+      let x = document.getElementById("box");
+      x.style.transform = "translateX(1000px) rotate(180deg)";
+    };
+  </script>
 </html>
